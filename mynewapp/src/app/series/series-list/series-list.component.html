@@ -1,0 +1,29 @@
+<header class="bg-dark text-white py-3">
+  <h1 class="text-center">TV Series</h1>
+</header>
+<main class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Seasons</th>
+          </tr>
+        </thead>
+        <tbody id="series" *ngFor="let serie of series">
+          <td>{{serie.id}}</td>
+          <td><a href="#">{{serie.name}}</a></td>
+          <td>{{serie.channel}}</td>
+          <td>{{serie.seasons}}</td>
+        </tbody>
+      </table>
+      <p>Seasons average: {{averageSeassons()}}</p>
+    </div>
+    <div class="col">
+      <!-- Segunda columna -->
+    </div>
+  </div>
+</main>
